@@ -2,7 +2,7 @@ var koa = require('koa');
 var app = koa();
 var port = process.env.PORT || 3000;
 var logger = require('koa-logger');
-var bodyparser = require('koa-parser');
+var bodyparser = require('koa-bodyparser');
 var views = require('co-views');
 var render = views(__dirname + '/public');
 var flash = require('koa-flash');
@@ -15,6 +15,10 @@ app.use(bodyparser());
 app.use(logger());
 
 var router = require('koa-route');
+
+router.get('/', function *(){
+    this.body = yield render('index.html');
+});
 
 app.listen(port);
 console.log('Listening on port' + port);
