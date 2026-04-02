@@ -23,15 +23,15 @@
   "dependencies": {
     "co-views": "^0.3.0",
     "jade": "^1.9.2",
-    "koa": "^0.18.0",
+    "koa": "^3.1.1",
     "koa-bodyparser": "^1.4.0",
     "koa-flash": "^0.1.0",
     "koa-logger": "^1.2.2",
     "koa-route": "^2.4.0",
     "koa-session": "^3.1.0",
     "koa-static": "^1.4.9",
-    "mongodb": "^1.4.32",
-    "mongoose": "^3.8.24"
+    "mongodb": "^7.1.0",
+    "mongoose": "^9.1.6"
   },
   "engines": {
     "node": ">= 0.11.14",
